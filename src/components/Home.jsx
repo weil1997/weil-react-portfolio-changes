@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import weilbild from "../assets/weilbild.png";
+import weilbild from "../assets/weil-bg.png";
 
 const Home = () => {
   return (
@@ -17,21 +17,14 @@ const Home = () => {
             I have experience in developing fullstack solutions with a strong
             understanding of databases and fullstack technologys
           </p>
-          <div>
-            <button className="text-white w-fit px-6 py-3 my-2 flex items -center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor pointer">
-              Portfolio
-              <span className="hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </button>
-          </div>
+          <div></div>
         </div>
         <div>
           <img
             src={weilbild}
             alt="My profile"
-            className="rounded-full mx-auto w-1/2 md:w-1/1 float-right"
-            style={{ borderRadius: "10%" }}
+            className="rounded-full mx-auto"
+            style={{ borderRadius: "10%", width: "70%", marginLeft: "16rem" }}
           />
         </div>
       </div>
