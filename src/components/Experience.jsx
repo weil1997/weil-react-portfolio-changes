@@ -4,11 +4,11 @@ import react from "../Skills/react.png";
 import typescript from "../Skills/typescript.png";
 import javascript from "../Skills/javascript.png";
 import mongodb from "../Skills/mongodb.png";
-import node from "../Skills/node.js.png";
+import node from "../Skills/nodejs.png";
 import tailwind from "../Skills/tailwind.png";
 import sass from "../Skills/sass.png";
 import css from "../Skills/css.png";
-import html from "../Skills/html.png";
+import html from "../Skills/html5.png";
 
 export const Experience = () => {
   const techs = [
@@ -70,13 +70,12 @@ export const Experience = () => {
 
   return (
     <div
-      name="experience "
-      className="bg-gradient-to-b from-gray-800 to-black
-    w-full h-screen"
+      name="experience"
+      className="bg-gradient-to-b from-gray-800 to-black w-full py-8"
     >
-      <div className="max-w-screen lg mx-auto p-4 flex flex-col justify-center w-ful h-full text-white">
+      <div className="max-w-screen p-4 flex flex-col justify-center text-white">
         <div>
-          <p className=" flex flex-col items-center justify-center text-4xl font-bold  p-2 inline">
+          <p className=" flex flex-col items-center justify-center text-4xl font-bold p-2 inline">
             Experience
           </p>
           <p className="py-6 text-center font-bold ">
@@ -89,7 +88,7 @@ export const Experience = () => {
               key={tech.id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${tech.style}`}
             >
-              <img src={tech.src} alt="" className="w-20 mx-auto" />
+              <img src={tech.src} alt="" className="w-16 h-16 mx-auto" />
               <p className="mt-4">{tech.title}</p>
             </div>
           ))}
@@ -99,3 +98,4 @@ export const Experience = () => {
   );
 };
 export default Experience;
+ 

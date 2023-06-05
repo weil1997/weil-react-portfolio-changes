@@ -20,27 +20,28 @@ const Projects = () => {
     },
   ];
 
+ 
   return (
     <div
       name="Portfolio"
-      className="bg-gradient-to-b from-black to bg-gray-800 w-full text-white md:h-screen "
+      className="bg-gradient-to-b from-black to bg-gray-800 w-full text-white py-8"
     >
       <div className="max-w-screen lg p-4 mc-auto flex flex-col justify-center w-full h-full  ">
         <div className="pb-8">
-          <p className=" flex flex-col items-center justify-center text-4xl font-bold p-2 inline">
+          <p className="flex flex-col items-center justify-center text-4xl font-bold p-2 inline">
             Portfolio
           </p>
           <p className="py-6 text-center font-bold">
             Check out some of my work right here
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="flex flex-col items-center">
           {Portfolios.map(({ id, src }) => (
-            <div key={id} className="rounded-lg">
+            <div key={id} className="rounded-lg mb-4">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 max-w-64 max-h-64"
               />
             </div>
           ))}
